@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Market Overview",
-  description: "환율과 주요 미국, 한국 지수를 확인하는 시장 대시보드",
+  title: "Payment Test",
+  description: "PayPal, 신용카드, 카카오페이, 네이버페이 결제 테스트 화면",
 };
 
 export default function RootLayout({
