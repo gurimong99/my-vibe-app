@@ -201,7 +201,7 @@ export default function Home() {
     }
 
     loadMarkets();
-    const timer = window.setInterval(loadMarkets, 30000);
+    const timer = window.setInterval(loadMarkets, 2000);
 
     return () => {
       isMounted = false;
@@ -297,7 +297,7 @@ export default function Home() {
                   </p>
                 </div>
                 <p className="text-sm font-medium text-zinc-500">
-                  30초마다 자동 갱신
+                  2초마다 자동 갱신
                 </p>
               </div>
 
