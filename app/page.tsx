@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import Link from "next/link";
 import { FormEvent, useState } from "react";
 
 type CheckoutLog = { label: string; value: string };
@@ -138,15 +139,23 @@ export default function PaymentTestPage() {
       />
       <main className="min-h-screen bg-[#f5f7fb] text-zinc-950">
         <section className="border-b border-zinc-200 bg-white">
-          <div className="mx-auto max-w-5xl px-6 py-12">
-            <p className="text-sm font-bold text-blue-700">TOSS TEST</p>
-            <h1 className="mt-3 text-3xl font-bold tracking-normal">
-              토스 결제 테스트 페이지
-            </h1>
-            <p className="mt-4 max-w-2xl leading-7 text-zinc-600">
-              `payment-server`의 결제 준비 API를 호출한 뒤 토스페이먼츠 테스트
-              결제창을 실행합니다.
-            </p>
+          <div className="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-12 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm font-bold text-blue-700">TOSS TEST</p>
+              <h1 className="mt-3 text-3xl font-bold tracking-normal">
+                토스 결제 테스트 페이지
+              </h1>
+              <p className="mt-4 max-w-2xl leading-7 text-zinc-600">
+                `payment-server`의 결제 준비 API를 호출한 뒤 토스페이먼츠
+                테스트 결제창을 실행합니다.
+              </p>
+            </div>
+            <Link
+              href="/adsense"
+              className="inline-flex shrink-0 rounded-md border border-zinc-300 bg-white px-4 py-3 text-sm font-bold text-zinc-800 transition hover:border-blue-300 hover:text-blue-700"
+            >
+              애드센스 테스트 페이지
+            </Link>
           </div>
         </section>
 
